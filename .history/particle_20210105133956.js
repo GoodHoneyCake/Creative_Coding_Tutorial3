@@ -20,8 +20,8 @@ export class Particle {
     this.fps = 15;
     this.fpsTime = 1000 / this.fps;
 
-    this.savedRgb = 0xffffff;
-    this.rgb = 0x000000;
+    this.savedRgb = 0x000000;
+    this.rgb = 0xffffff;
   }
 
   collide() {
