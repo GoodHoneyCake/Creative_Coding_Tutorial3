@@ -49,7 +49,6 @@ export class Visual {
         const ay = ty - this.mouse.y;
         item.vx -= ax;
         item.vy -= ay;
-        item.collide();
       }
 
       item.draw(ctx, t);

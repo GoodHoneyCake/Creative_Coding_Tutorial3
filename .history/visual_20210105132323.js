@@ -47,9 +47,8 @@ export class Visual {
         const ty = item.y + Math.sin(angle) * minDist;
         const ax = tx - this.mouse.x;
         const ay = ty - this.mouse.y;
-        item.vx -= ax;
-        item.vy -= ay;
-        item.collide();
+        item.vx - ax;
+        item.vy - ay;
       }
 
       item.draw(ctx, t);
