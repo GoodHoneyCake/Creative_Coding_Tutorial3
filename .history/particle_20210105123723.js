@@ -69,7 +69,7 @@ export class Particle {
     ctx.fillText(
       str,
       this.x - textPos.width / 2,
-      this.y + (fontSize - textPos.actualBoundingBoxAscent) / 2
+      this.y + (fontSize - textPos.ac)
     );
   }
 

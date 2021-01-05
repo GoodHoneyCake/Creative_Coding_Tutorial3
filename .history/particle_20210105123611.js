@@ -66,11 +66,6 @@ export class Particle {
     ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
     ctx.textBaseline = `middle`;
     const textPos = ctx.measureText(str);
-    ctx.fillText(
-      str,
-      this.x - textPos.width / 2,
-      this.y + (fontSize - textPos.actualBoundingBoxAscent) / 2
-    );
   }
 
   shuffle(arr) {
