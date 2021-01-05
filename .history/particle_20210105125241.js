@@ -26,7 +26,7 @@ export class Particle {
 
   collide() {
     this.rgb = 0xf3316e;
-    this.textArr = this.shuffle(this.textArr);
+    this.textArr = this.shuffle(RANDOM_TEXT);
   }
   draw(ctx, t) {
     this.rgb += (this.savedRgb - this.rgb) * COLOR_SPEED;

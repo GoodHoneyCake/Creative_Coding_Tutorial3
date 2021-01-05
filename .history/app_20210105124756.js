@@ -2,7 +2,7 @@ import { Visual } from "./visual.js";
 
 class App {
   constructor() {
-    this.canvas = document.createElement("canvas");
+    this.cnavas = document.createElement("canvas");
     document.body.appendChild(this.canvas);
 
     this.ctx = this.canvas.getContext("2d");
@@ -30,17 +30,6 @@ class App {
 
     this.canvas.window = this.stageWidth * this.pixelRatio;
     this.canvas.height = this.stageHeight * this.pixelRatio;
-    this.ctx.scale(this.pixelRatio, this.pixelRatio);
-
-    this.visual.show(this.stageWidth, this.stageHeight);
-  }
-
-  animate(t) {
-    requestAnimationFrame(this.animate.bind(this));
-
-    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
-
-    this.visual.animate(this.ctx, t);
   }
 }
 
