@@ -32,14 +32,6 @@ export class Visual {
     }
   }
 
-  animate(ctx, t) {
-    for (let i = 0; i < this.particles.length; i++) {
-      const item = this.particles[i];
-
-      item.draw(ctx, t);
-    }
-  }
-
   onMove(e) {
     this.mouse.x = e.clientX;
     this.mouse.y = e.clientY;

@@ -28,15 +28,6 @@ export class Visual {
     this.particles = [];
     for (let i = 0; i < this.pos.length; i++) {
       const item = new Particle(this.pos[i]);
-      this.particles.push(item);
-    }
-  }
-
-  animate(ctx, t) {
-    for (let i = 0; i < this.particles.length; i++) {
-      const item = this.particles[i];
-
-      item.draw(ctx, t);
     }
   }
 
